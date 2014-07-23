@@ -7,13 +7,21 @@
 //
 
 #import "MFCAppDelegate.h"
+#import "MFCTableViewController.h"
 
 @implementation MFCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     // Override point for customization after application launch.
+
+    MFCTableViewController * tableVC = [[MFCTableViewController alloc] initWithStyle:UITableViewStylePlain]; /// creating an instance of MFCTVC with a pointer to the original
+    
+    self.window.rootViewController = tableVC;
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

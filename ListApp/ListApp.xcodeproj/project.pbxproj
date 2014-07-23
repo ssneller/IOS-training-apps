@@ -19,6 +19,7 @@
 		496227FF197FFAFD00EB1913 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496227E7197FFAFD00EB1913 /* UIKit.framework */; };
 		49622807197FFAFD00EB1913 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49622805197FFAFD00EB1913 /* InfoPlist.strings */; };
 		49622809197FFAFD00EB1913 /* ListAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49622808197FFAFD00EB1913 /* ListAppTests.m */; };
+		49622815198005FA00EB1913 /* MFCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49622814198005FA00EB1913 /* MFCTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		49622804197FFAFD00EB1913 /* ListAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ListAppTests-Info.plist"; sourceTree = "<group>"; };
 		49622806197FFAFD00EB1913 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		49622808197FFAFD00EB1913 /* ListAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListAppTests.m; sourceTree = "<group>"; };
+		49622813198005FA00EB1913 /* MFCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFCTableViewController.h; sourceTree = "<group>"; };
+		49622814198005FA00EB1913 /* MFCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFCTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,7 @@
 		496227D7197FFAFD00EB1913 = {
 			isa = PBXGroup;
 			children = (
+				496228121980055F00EB1913 /* Controllers */,
 				496227E9197FFAFD00EB1913 /* ListApp */,
 				49622802197FFAFD00EB1913 /* ListAppTests */,
 				496227E2197FFAFD00EB1913 /* Frameworks */,
@@ -142,6 +146,15 @@
 				49622805197FFAFD00EB1913 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		496228121980055F00EB1913 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49622813198005FA00EB1913 /* MFCTableViewController.h */,
+				49622814198005FA00EB1913 /* MFCTableViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +255,7 @@
 			files = (
 				496227F0197FFAFD00EB1913 /* main.m in Sources */,
 				496227F4197FFAFD00EB1913 /* MFCAppDelegate.m in Sources */,
+				49622815198005FA00EB1913 /* MFCTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
