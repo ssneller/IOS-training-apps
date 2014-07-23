@@ -113,7 +113,7 @@
     passwordField.autocorrectionType = UITextAutocorrectionTypeNo;
     passwordField.placeholder = @"password";
     passwordField.delegate = self;  /// need this for closing keyboard /// only has to be done once for a view???
-    paddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 20)];
+    paddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 20)];  /// must be added for each textfield or it will only see the last one
     passwordField.leftView= paddingView;
     passwordField.leftViewMode = UITextFieldViewModeAlways;
     [self.view addSubview:passwordField];
@@ -155,7 +155,7 @@
     return YES;   /// nothing executes after return
 }
 
--(void)loginButtonClicked   /// button method /// we are not doing anything here...
+-(void)loginButtonClicked   /// loginButton method /// we are not doing anything here...
 {
     ///   self.view.backgroundColor = [UIColor whiteColor];   /// changes background color when button is clicked
     NSLog(@"Button Clicked");   /// added to print status
