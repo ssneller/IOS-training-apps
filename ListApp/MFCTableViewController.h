@@ -10,7 +10,5 @@
 
 @interface MFCTableViewController : UITableViewController
 
-@property (nonatomic) NSArray * listitems;
-
 
 @end

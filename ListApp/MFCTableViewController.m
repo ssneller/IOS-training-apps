@@ -10,6 +10,19 @@
 
 @interface MFCTableViewController ()
 
+//@property (nonatomic) NSArray * listitems;
+
+// create an array for students -NSStrings
+//@property (nonatomic) NSArray * students;
+
+//create an array for colors    - UIColors
+//@property (nonatomic) NSArray * colors;
+
+// create an array for sizes    - NSNumbers
+//@property (nonatomic) NSArray   * sizes;
+
+@property (nonatomic) NSArray * info;
+
 @end
 
 @implementation MFCTableViewController
@@ -25,7 +38,29 @@
         
 //        self.listitems = [NSArray arrayWithObjects:@"Monday", @"Tuesday", @"Wednesday", @"Thursday", nil];
         
-        self.listitems = @[@"Monday", @"Tuesday", @"Wednesday", @"Thursday"];   /// easiest way usig a literal
+        /// set 7 days
+//        self.listitems = @[@"Monday", @"Tuesday", @"Wednesday", @"Thursday", @"Friday", @"Saturday", @"Sunday"];   ///add the last 3 days/// easiest way using a literal
+        
+        ///set 7 students
+//        self.students = @[@"Adam", @"Eve", @"ralph", @"sam", @"max", @"will", @"greg"];
+        
+        ///set 7 colors
+//        self.colors = @[[UIColor redColor], [UIColor greenColor], [UIColor grayColor], [UIColor blueColor], [UIColor orangeColor], [UIColor yellowColor], [UIColor purpleColor]];
+        
+        ///set 7 size numbers 20-40
+//        self.sizes = @[@21, @24, @27, @30, @33, @36, @39];
+        
+        /// create dictionary
+        
+        self.info = @[
+                      @{@"day":@"Monday",@"color":[UIColor redColor],@"student":@"Adam",@"size":@21},
+                      @{@"day":@"Tuesday", @"color":[UIColor greenColor], @"student":@"Eve", @"size":@24},
+                      @{@"day":@"Wednesday", @"color":[UIColor grayColor], @"student":@"Ralph", @"size":@27},
+                      @{@"day":@"Thursday", @"color":[UIColor blueColor], @"student":@"Sam", @"size":@30},
+                      @{@"day":@"Friday", @"color":[UIColor orangeColor], @"student":@"Max", @"size":@33},
+                      @{@"day":@"Saturday", @"color":[UIColor yellowColor], @"student":@"Will", @"size":@36},
+                      @{@"day":@"Sunday", @"color":[UIColor purpleColor], @"student":@"Greg", @"size":@39},
+                      ];
         
  //       NSString * iC = self.listitems.count;
  //       NSLog(iC)
@@ -58,22 +93,50 @@
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return self.listitems.count;    /// keeps list count dynamic
+    return self.info.count;    /// keeps list count dynamic
 }
 
+/*
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSNumber * size = sizes[indexPath.row];
+
+    return [size floatValue] * 2;
+}
+*/
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 //    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];  /// IndexPath indicates table position
-    UITableViewCell * cell = [[UITableViewCell alloc] init];
+    UITableViewCell * cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleSubtitle) reuseIdentifier:@"cell"];
     
-//    NSString * listitem = [self.listitems objectAtIndex:indexPath.row];
+//    NSString * listitem = self.listitems[indexPath.row];
     
-    NSString * listitem = self.listitems[indexPath.row];
+    NSDictionary * infoItem = self.info[indexPath.row];
     
-    NSLog(listitem);   /// lists all rows
+ //   NSLog(listitem);   /// lists all rows
     
-    cell.textLabel.text = listitem;
+    cell.textLabel.text = infoItem[@"day"];
+    
+    // there is a sub text that will be set by student names
+//    NSString * student = self.students[indexPath.row];
+    cell.detailTextLabel.text = infoItem[@"student"];
+    
+    //set background color to color in array
+ //   cell.backgroundColor = [UIColor greenColor];
+ //   UIColor * color = self.colors[indexPath.row];
+//    -(UIColor)color;
+//    NSString * newColor = [UIColor ]
+    
+    cell.backgroundColor = infoItem[@"color"];
+    
+    //set the text label font size to a number from last array
+//    NSNumber * size = self.sizes[indexPath.row];
+//    cell.textLabel.font = [UIFont systemFontSize
+ //   cell.textLabel.font = [UIFont systemFontOfSize:[size intValue]];
+    cell.textLabel.font = [UIFont systemFontOfSize:[infoItem[@"size"] intValue]];
+    
+ //   NSLog(@"WD is %@ Student is %@ Color is %@ Size is %@", listitem, student, color, size);
     
     // Configure the cell...
     
