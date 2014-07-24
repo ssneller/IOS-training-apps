@@ -9,9 +9,15 @@
 #import "MFCTableViewController.h"
 
 @interface MFCTableViewController ()
-
-/// create an array for the dictionary information
-@property (nonatomic) NSArray * info;
+/// declare properties for arrays
+/// create array for weekdays -NNStrings
+@property (nonatomic) NSArray * listitems;
+// create an array for students -NSStrings
+@property (nonatomic) NSArray * students;
+//create an array for colors    - UIColors
+@property (nonatomic) NSArray * colors;
+// create an array for sizes    - NSNumbers
+@property (nonatomic) NSArray   * sizes;
 
 @end
 
@@ -24,21 +30,19 @@
         
         // Custom initialization
         
-        /// create dictionary
-        /// set key, then value in pairs "{}" around groups
-        self.info = @[
-                      @{@"day":@"Monday",@"color":[UIColor redColor],@"student":@"Adam",@"size":@21},
-                      @{@"day":@"Tuesday", @"color":[UIColor greenColor], @"student":@"Eve", @"size":@24},
-                      @{@"day":@"Wednesday", @"color":[UIColor grayColor], @"student":@"Ralph", @"size":@27},
-                      @{@"day":@"Thursday", @"color":[UIColor blueColor], @"student":@"Sam", @"size":@30},
-                      @{@"day":@"Friday", @"color":[UIColor orangeColor], @"student":@"Max", @"size":@33},
-                      @{@"day":@"Saturday", @"color":[UIColor yellowColor], @"student":@"Will", @"size":@36},
-                      @{@"day":@"Sunday", @"color":[UIColor purpleColor], @"student":@"Greg", @"size":@39},
-                      ];
-    }                   ///end dictionary
+/// My code starts here
+        /// set 7 days
+        self.listitems = @[@"Monday", @"Tuesday", @"Wednesday", @"Thursday", @"Friday", @"Saturday", @"Sunday"]; /// easiest way using a literal
+        ///set 7 students
+        self.students = @[@"Adam", @"Eve", @"ralph", @"sam", @"max", @"will", @"greg"];
+        ///set 7 colors
+        self.colors = @[[UIColor redColor], [UIColor greenColor], [UIColor grayColor], [UIColor blueColor], [UIColor orangeColor], [UIColor yellowColor], [UIColor purpleColor]];/// be sure to include brackets to use entire class method
+        ///set 7 size numbers 20-40
+        self.sizes = @[@21, @24, @27, @30, @33, @36, @39];
+    }
     return self;
 }
-
+/// Array code ends here
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -61,45 +65,42 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return self.info.count;    /// keeps list count dynamic
+    return self.listitems.count;    /// keeps list count dynamic
 }
 
-/*
+     /// method to scale cell height based on font size
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
- ///   NSNumber * size = sizes[indexPath.row];
- //   NSNumber * size = [infoItem[@"size"]];
-    ///return [size floatValue] * 2;
+    NSNumber * size = self.sizes[indexPath.row];
+
     return [size floatValue] * 2;
 }
-*/
+///Scale cell method ends here
 
+/// Method to display all arrays starts here
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell * cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleSubtitle) reuseIdentifier:@"cell"];/// I have no idea what is happening here...
-    
-    /// my dictionary code starts here
-    /// this creates an array of each info item and calls it "infoItem"
-    NSDictionary * infoItem = self.info[indexPath.row];
-    /// pull  day items from Dictionary. day is the key and the weekday is the value
-    cell.textLabel.text = infoItem[@"day"];
-    ///  student names
-    cell.detailTextLabel.text = infoItem[@"student"];
-    //set background color to color in dictionary
-    cell.backgroundColor = infoItem[@"color"];
+    UITableViewCell * cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleSubtitle) reuseIdentifier:@"cell"];
+    /// lists all rows
+    NSString * listitem = self.listitems[indexPath.row];
+    cell.textLabel.text = listitem;
+    // set sub text for student names
+    NSString * student = self.students[indexPath.row];///since students is name of array we use student to represent single item
+    cell.detailTextLabel.text = student;
+    //set background color to color in array
+    UIColor * color = self.colors[indexPath.row];
+    cell.backgroundColor = color;
     //set the text label font size to a number from last array
-    cell.textLabel.font = [UIFont systemFontOfSize:[infoItem[@"size"] intValue]];   /// intValue changes font size (float) to integer
-    
- //   NSLog(@"WD is %@ Student is %@ Color is %@ Size is %@", listitem, student, color, size);
-    /// my dictionary code ends here
-    
-    // Configure the cell...
-    
+    NSNumber * size = self.sizes[indexPath.row];
+    cell.textLabel.font = [UIFont systemFontOfSize:[size intValue]];
+    /// added below line to see all variables
+ ///   NSLog(@"WD is %@ Student is %@ Color is %@ Size is %@", listitem, student, color, size);
+        // Configure the cell...
     return cell;
 }
 
+/// my code ends here
 
 /*
 // Override to support conditional editing of the table view.
