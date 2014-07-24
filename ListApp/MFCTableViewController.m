@@ -66,15 +66,17 @@
     return self.info.count;    /// keeps list count dynamic
 }
 
-/*
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSDictionary * infoItem = self.info[indexPath.row];
+
  ///   NSNumber * size = sizes[indexPath.row];
  //   NSNumber * size = [infoItem[@"size"]];
     ///return [size floatValue] * 2;
-    return [size floatValue] * 2;
+    return [infoItem[@"size"] floatValue] * 2;
 }
-*/
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
