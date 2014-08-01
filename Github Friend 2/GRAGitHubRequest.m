@@ -24,12 +24,12 @@
     
     /// mutable request
     
-///    NSMutableURLRequest * mutableRequest = [NSMutableURLRequest requestWithURL:url];
+    ///    NSMutableURLRequest * mutableRequest = [NSMutableURLRequest requestWithURL:url];
     
-///    [mutableRequest setHTTPMethod:@"POST"];
+    ///    [mutableRequest setHTTPMethod:@"POST"];
     
     
- ///   mutableRequest.HTTPMethod = @"POST";   /// setting and getting properties
+    ///   mutableRequest.HTTPMethod = @"POST";   /// setting and getting properties
     
     //////
     
@@ -38,10 +38,10 @@
     NSError * error = nil;  /// running method on nil keeps it from crashing
     
     NSData * responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];   /// use synch  , put & infront of variables
-                             
+    
     NSDictionary * userInfo = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:&error];   /// dictionary using NSJSONSerialization is standard for this website
     
-                            
+    
     NSLog(@"user info = %@", userInfo);   /// print the data to console
     
     return  userInfo;  ///returns data
@@ -64,8 +64,8 @@
 /// new method to load the data and pull it apart
 + (NSArray *)loadUsers
 {
-   /// path to what we are loading
-     NSString * path = [GRAGitHubRequest usersArchivePath];   ///returns path
+    /// path to what we are loading
+    NSString * path = [GRAGitHubRequest usersArchivePath];   ///returns path
     /// then we unarchive
     NSArray * users = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
     

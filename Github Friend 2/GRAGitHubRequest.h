@@ -11,6 +11,6 @@
 @interface GRAGitHubRequest : NSObject
 
 + (NSDictionary *)requestUserInfo:(NSString *)username; //// this makes it a method
-+ (void) saveUsers: (NSArray *)users;
-+ (NSArray *)loadUsers;
++ (void) saveUsers: (NSArray *)users; /// makes it public for others
++ (NSArray *)loadUsers;         /// makes it public for others
 @end

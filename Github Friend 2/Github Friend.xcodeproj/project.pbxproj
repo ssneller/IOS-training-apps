@@ -112,6 +112,7 @@
 			children = (
 				49769AF31982D65C00022FBB /* downArrow.png */,
 				49769AF41982D65C00022FBB /* profileArrow.png */,
+				8A528A6F19813F0B0065384E /* Controllers */,
 				49769AF51982D65C00022FBB /* searchButton.png */,
 				49769AF61982D65C00022FBB /* upArrow.png */,
 			);
@@ -122,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				49769AF11982D62B00022FBB /* Resources */,
-				8A528A6F19813F0B0065384E /* Controllers */,
 				8A528A4619813EF20065384E /* Github Friend */,
 				8A528A5F19813EF20065384E /* Github FriendTests */,
 				8A528A3F19813EF20065384E /* Frameworks */,

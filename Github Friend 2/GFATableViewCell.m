@@ -9,21 +9,20 @@
 
 #import "GFATableViewController.h"
 #import "GFAViewController.h"
-
 #import "GFATableViewCell.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface GFATableViewController ()  <UITextFieldDelegate>
+@interface GFATableViewController ()  <UITextFieldDelegate>   //// set delegate here
 
 @end
-@implementation GFATableViewCell
+@implementation GFATableViewCell        ////
 {
-    
-    UIImageView * leadOrFollowImage;
+    //// most of the variables are global scope for this.
+    UIImageView * leadOrFollowImage; //// declare all fo the image viewer /// used for image location
     UIImageView * friendImage;
     UIImageView * statusImage;
     
-    UIImage * profileButtonImage;
+    UIImage * profileButtonImage; //// declare all fo the images
     UIImage * arrowDownImage;
     UIImage * arrowUpImage;
     
@@ -39,7 +38,6 @@
     UIButton * searchButton;
     UIButton * gistsButton;
     UIButton * profileButton;
-    UIWebView  * webView1;
 }
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -60,7 +58,6 @@
         
         //Setting the Name
         friendName = [[UILabel alloc]initWithFrame:CGRectMake(cellWidth * .4, 0, 210, 50)];
-        //        friendName.textColor = [UIColor colorWithRed:0.337f green:0.337f blue:0.337f alpha:1.0f];
         friendName.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size: 22.0];
         friendName.textColor = [UIColor whiteColor];
         [self.contentView addSubview:friendName];
@@ -136,14 +133,14 @@
         cityAndStateLabel.textColor = [UIColor colorWithRed:0.482f green:0.482f blue:0.482f alpha:1.0f];
         [self.contentView addSubview:cityAndStateLabel];
         
-        //Setting the Followers labels. /// not used here
+        //Setting the Followers labels. /// not used here   //// do not add subview as we just want the data
         followersLabel = [[UILabel alloc]initWithFrame:CGRectMake(cellWidth * 4, 9, 130, 150)];
         //       followersLabel.textColor = [UIColor colorWithRed:0.769f green:0.769f blue:0.769f alpha:1.0f];
         followersLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size: 14.0];
         followersLabel.textColor = [UIColor whiteColor];
         //        [self.contentView addSubview:followersLabel];
         
-        //Setting the Following labels. /// not used here
+        //Setting the Following labels. /// not used here   //// do not add subview as we just want the data
         followingLabel = [[UILabel alloc]initWithFrame:CGRectMake(cellWidth * .4, 10, 130, 190)];
         //        followingLabel.textColor = [UIColor colorWithRed:0.769f green:0.769f blue:0.769f alpha:1.0f];
         followingLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size: 14.0];
@@ -188,26 +185,26 @@
 {
     NSLog(@" Profile Button Clicked");
     
-    GFAViewController * profileView = [[GFAViewController alloc]init];/// create
+    GFAViewController * profileView = [[GFAViewController alloc]init];/// create the view controller
     
     profileView.view.backgroundColor =[UIColor lightGrayColor];/// be sure to add a background
     
-    //    profileView.friendInfo = gitHubFriends[indexPath.row];
+    //    profileView.friendInfo = gitHubFriends[indexPath.row];//// data from GTVC
     profileView.friendInfo = self.friendInfo;
     
     [self.navigationController pushViewController:profileView animated:YES];
     
 }
 
-
+/*
 - (void)setXValue:(int)xValue
 {
     _xValue = xValue;
     
     //    gistsNumberLabel.frame = CGRectMake(cellWidth * .75, xValue * .7, buttonSize, buttonSize);
-    
+    NSLog(@(xValue));
 }
-
+*/
 -(void) gistsButtonClicked
 {
     NSLog(@" Gists Button Clicked");
@@ -217,27 +214,15 @@
     
     //    profileView.friendInfo = gitHubFriends[indexPath.row];
     
-    NSString * gistURL = [NSString stringWithFormat:@"https://gist.github.com/%@", self.friendInfo[@"login"]];
+    NSString * gistURL = [NSString stringWithFormat:@"https://gist.github.com/%@", self.friendInfo[@"login"]];  //// get path and login name
     
-    profileView.friendInfo = @{@"html_url":gistURL};   ///self.friendInfo;
+    profileView.friendInfo = @{@"html_url":gistURL};   ///sets profileView to open
     
-    [self.navigationController pushViewController:profileView animated:YES];
-}
-
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    
-    GFATableViewCell * cellH1 = [[GFATableViewCell alloc]init];
-    
-    cellH1.xValue = 100;
-    
-    NSLog(@"cellH1 is %i",cellH1.xValue);
-    return cellH1.xValue;
+    [self.navigationController pushViewController:profileView animated:YES];  ///  for
 }
 
 /*
- 
+ /// these are the needed keys for the NSdictionary
  @"login": @"joalbright",
  @"name":@"Jo Albright",
  @"public_gists": @"2",
@@ -250,7 +235,7 @@
  
  */
 
--(void) setFriendInfo:(NSDictionary *)friendInfo
+-(void) setFriendInfo:(NSDictionary *)friendInfo    /////polling the dictionary to get values above
 {
     _friendInfo = friendInfo;
     
@@ -258,35 +243,29 @@
     NSString * avatarURL =[NSString stringWithFormat:@"%@" , friendInfo[@"avatar_url"]];
     //   NSLog(@"user avatar URL is %@", avatarURL);
     
-    NSURL * avatarURLName = [NSURL URLWithString:avatarURL];
+    NSURL * avatarURLName = [NSURL URLWithString:avatarURL]; /// gets avatar URL
     
-    NSData * data = [NSData dataWithContentsOfURL:avatarURLName];
+    NSData * data = [NSData dataWithContentsOfURL:avatarURLName];   /// grabs the picture data from the avatar URL
     
-    UIImage *image = [UIImage imageWithData:data];
+    UIImage *image = [UIImage imageWithData:data];   /// assigns the picture to an image
     
-    friendImage.image = image;
+    friendImage.image = image;   /// assigns the above pic to friendImage.image
     
     /// get user URL
-    
     NSString * userURL =[NSString stringWithFormat:@"%@" , friendInfo[@"html_url"]];
     NSLog(@"user URL is %@", userURL);
     
-    //    NSURL * url = [NSURL URLWithString:userURL];
-    
-    //    NSData * userData = [NSData dataWithContentsOfURL:url];
-    //    NSLog(@"user data is %@", userURL);
-    
-    // get Label data for for Name
+    // get Label data for Name
     friendName.text =friendInfo[@"name"];
     
     // get Label for City and state
     cityAndStateLabel.text =friendInfo[@"location"];
     
     // Get Label data for # of gists
-    
     //    gistsNumberLabel.text =[NSString stringWithFormat:@"%@" , friendInfo[@"public_gists"]];
     NSString * gists =[NSString stringWithFormat:@"%@" , friendInfo[@"public_gists"]];
     gistsNumberLabel.text = gists;
+    NSLog(@"gists count %@", gists);
     
     // get data for followers
     //    followersLabel.text = [NSString stringWithFormat:@"Followers : %@", friendInfo[@"followers"]];
@@ -304,7 +283,7 @@
     
     followNumberLabel.text = @"0";
     
-    if (friendFollowers > friendFollowing) {
+    if (friendFollowers > friendFollowing) {        ///sets conditions for follower
         //      NSLog(@"up");
         followStatusLabel.text = (@"Follower");
         followStatusLabel.textColor = [UIColor colorWithRed:0.965f green:0.125f blue:0.341f alpha:1.0f];
@@ -316,7 +295,7 @@
         followNumberLabel.text = (strFromInt);
         [statusImage setImage:arrowDownImage];
     }
-    if (friendFollowing > friendFollowers) {
+    if (friendFollowing > friendFollowers) {  ///sets conditions for leader
         //      NSLog(@"down");
         followStatusLabel.text = (@"Leader");
         followStatusLabel.textColor = [UIColor colorWithRed:0.196f green:0.973f blue:0.749f alpha:1.0f];
@@ -327,7 +306,18 @@
         NSLog(@"%@",strFromInt);
         followNumberLabel.text = (strFromInt);
         [statusImage setImage:arrowUpImage];
-        
+    }
+    if (friendFollowing == friendFollowers) {    //// added to set everything back to "neutral" if followers and following are the same
+        //      NSLog(@"down");
+        followStatusLabel.text = (@"Just Friends");
+        followStatusLabel.textColor = [UIColor colorWithRed:0.498f green:0.498f blue:0.498f alpha:1.0f];
+        followNumberLabel.layer.borderColor = [UIColor colorWithRed:0.498f green:0.498f blue:0.498f alpha:1.0f].CGColor;
+        followNumberLabel.textColor = [UIColor colorWithRed:0.498f green:0.498f blue:0.498f alpha:1.0f];
+        int fList = friendFollowing - friendFollowers;
+        NSString *strFromInt = [NSString stringWithFormat:@"%d",fList];
+        NSLog(@"%@",strFromInt);
+        followNumberLabel.text = (strFromInt);
+        [statusImage setImage:nil];
     }
     
 }

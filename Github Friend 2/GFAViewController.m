@@ -35,8 +35,6 @@
     webView = [[UIWebView alloc] initWithFrame:self.view.frame]; /// uses entire view size
     
     [self.view addSubview:webView];/// add so it is visible
-    
-
 }
 
 -(void)setFriendInfo:(NSDictionary *)friendInfo
@@ -44,7 +42,7 @@
     _friendInfo = friendInfo;
     
     NSURL * url = [NSURL URLWithString:friendInfo[@"html_url"]]; /// these 3 lines give URL and request it
-    NSLog(@"WTF?");
+ ///   NSLog(@"WTF?");
     
     NSURLRequest * request = [NSURLRequest requestWithURL:url];
     

@@ -34,6 +34,7 @@
         
         /// our dictionary
         gitHubFriends = [@[
+                           //// this is where the dictionary goes
                            ]mutableCopy];
         NSArray * loadedUsers = [GRAGitHubRequest loadUsers];
         
@@ -55,7 +56,6 @@
 - (void)viewDidLoad
 {
     
- 
  UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
  
  [self.view addGestureRecognizer:tap];
@@ -132,12 +132,12 @@
     // Configure the cell...
     if (cell == nil){
         
-        cell = [[GFATableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        cell = [[GFATableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];  /// designates cell controller
         
     }
     
-    cell.friendInfo = gitHubFriends[indexPath.row];
-    cell.navigationController = self.navigationController;
+    cell.friendInfo = gitHubFriends[indexPath.row];  /// designates row for info
+    cell.navigationController = self.navigationController;   //// this line MUST be added to share the naigation controller
     
     return cell;
 }
@@ -164,73 +164,30 @@
     
     [self.navigationController pushViewController:profileView animated:YES];
 }
--(void) profileButtonClicked
-{
-    NSLog(@" Profile Button Clicked");
-    
-    GFAViewController * profileView1 = [[GFAViewController alloc]init];/// create
-    
-    profileView1.view.backgroundColor =[UIColor lightGrayColor];/// be sure to add a background
-    
-    //    profileView1.friendInfo = gitHubFriends[indexPath.row];
-    
-    [self.navigationController pushViewController:profileView1 animated:YES];
-    
-/*
-    webView = [[UIWebView alloc] initWithFrame:self.View.frame]; /// uses entire view size
-    
-    [self.View addSubview:webView];/// add so it is visible
-    
-    
-    NSURL * url = [NSURL URLWithString:@"http:www.google.com"];
-    NSURLRequest * request = [NSURLRequest requestWithURL:url];
-    [webView loadRequest:request];
-*/
-    
-}
-/*
-- (IBAction)searchButtonClicked:(id)sender
-{
-    NSLog(@"search Button clicked");
-    NSString *searchName = searchTextbox.text;
-    NSLog(@"searchname = %@", searchName);
-    {
-        // check if the fields are empty
-        if ([searchTextbox.text isEqualToString:@""]);
-    }
-    // warn empty string
-    
-    UIAlertView * noUserName = [[UIAlertView alloc] initWithTitle:@"failed login" message:@"please input user name" delegate:self cancelButtonTitle:@"whatever" otherButtonTitles:nil];
-    
-    [noUserName show];
-    
-    NSLog(@"username is empty... Tell user to fill in");
-}
-*/
-
 
 -(void)searchButtonClicked
  {
- NSLog(@"search Button clicked");
-     
-     NSDictionary * userInfo = [GRAGitHubRequest requestUserInfo:searchTextbox.text];
-     
-     //// adds an object to the end
-     [gitHubFriends addObject:userInfo];
-     
-     //// adds an object to the beginning and
-     [gitHubFriends insertObject:userInfo atIndex:0];
-     
-     
-     [self.tableView reloadData];   /// reloads and refreshes data
-     
-     [GRAGitHubRequest saveUsers:gitHubFriends];   /// keeps updated data
-     
-     [searchTextbox resignFirstResponder];  /// to close keyboard
-     
- //    return YES ;
+ ///NSLog(@"search Button clicked");
+     if ([searchTextbox.text isEqualToString:@""])
+     {
+         UIAlertView * noUserName = [[UIAlertView alloc] initWithTitle:@"No User Name" message:@"Please Input User Name" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
+         
+         [noUserName show];
+     } else {
+         NSDictionary * userInfo = [GRAGitHubRequest requestUserInfo:searchTextbox.text];  /// calls requestUserInfo method from GRAGitHubRequest.m
+         //// adds an object to the end   /// preferred method to insert to put at beginning (see below)
+         ///    [gitHubFriends addObject:userInfo];
+         
+         //// adds an object to the beginning and
+         [gitHubFriends insertObject:userInfo atIndex:0];
+         
+         [self.tableView reloadData];   /// reloads and refreshes data
+         
+         [GRAGitHubRequest saveUsers:gitHubFriends];   /// keeps updated data  ///called from GRAGitHubRequest.m
+         
+         [searchTextbox resignFirstResponder];  /// to close keyboard
+     }
  }
-
 
  - (BOOL)textFieldShouldReturn:(UITextField *)textField  /// method to close keyboard
  {
@@ -239,7 +196,7 @@
  }
 
 
- // Override to support conditional editing of the table view.
+ // Override to support conditional editing of the table view.      /// appletext   //// we uncommented to use this method
  - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
  {
  // Return NO if you do not want the specified item to be editable.
@@ -248,7 +205,7 @@
 
 
 
- // Override to support editing the table view.
+ // Override to support editing the table view.         /// appletext   //// we uncommented to use this method for deleting cells
  - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
  {
  if (editingStyle == UITableViewCellEditingStyleDelete) {
@@ -257,7 +214,7 @@
      
      [GRAGitHubRequest saveUsers:gitHubFriends];
      
- // Delete the row from the data source
+ // Delete the row from the data source         /// appletext   //// we uncommented to use this method
  [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
  } else if (editingStyle == UITableViewCellEditingStyleInsert) {
  // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
