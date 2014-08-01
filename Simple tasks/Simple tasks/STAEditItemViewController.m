@@ -33,13 +33,30 @@
     [super viewDidLoad];
     
     // Do any additional setup after loading the view.
+/*
+//    UIView * moveBoth = [[UIView alloc] initWithFrame:CGRectMake(10, 10, 50, 50)];
+//    moveBoth.backgroundColor = [UIColor whiteColor];
+    UIImage * moveImage = [UIImage imageNamed:@"Xkiaa.png"];
+    UIButton * moveSpot = [[UIButton alloc] initWithFrame:CGRectMake(200, 260, 40, 40)];
+    moveSpot.backgroundColor = [UIColor whiteColor];
+    [moveSpot setImage:moveImage forState:UIControlStateNormal];
+    [self.view addSubview:moveSpot];
+//    [moveBoth addSubview:moveSpot];
+
+    [moveSpot addTarget:self action: @selector(imageMoved:withEvent:) forControlEvents:UIControlEventTouchDown];
     
+    [moveSpot addTarget:self action:@selector(imageMoved:withEvent:) forControlEvents:UIControlEventTouchDragInside];
+  //  [moveBoth addSubview:moveSpot];
+ //   [moveBoth addSubview:moveImage];
+ 
+ */
 }
 
 
 -(void)setItemInfo:(NSMutableDictionary *)itemInfo  // // this creates a text field of the selected item for editing
 {
     _itemInfo = itemInfo;
+    
     
     UITextField * itemNameField = [[UITextField alloc] initWithFrame:CGRectMake(20, 60, SCREEN_WIDTH - 40, 40)];        // // aloc and init textfield for single items to be edited
     itemNameField.text = self.itemInfo[@"name"];        // // gets item name
@@ -104,7 +121,14 @@
     
 }
 
-
+/*
+-(void) imageMoved:(id) sender withEvent:(UIEvent *) event
+    {
+            CGPoint point = [[[event allTouches] anyObject] locationInView:self.view];
+            UIControl *control = sender;
+            control.center = point;
+        }
+*/
 -(BOOL)prefersStatusBarHidden { return YES; }     // // add to other VCs this removes the statusbar at top of window
 
 

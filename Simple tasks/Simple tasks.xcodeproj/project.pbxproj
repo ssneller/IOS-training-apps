@@ -26,6 +26,7 @@
 		490D7F7919898BE600B1DA9B /* group_save.png in Resources */ = {isa = PBXBuildFile; fileRef = 490D7F7519898BE600B1DA9B /* group_save.png */; };
 		490D7F7A19898BE600B1DA9B /* item_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 490D7F7619898BE600B1DA9B /* item_close.png */; };
 		490D7F7B19898BE600B1DA9B /* item_save.png in Resources */ = {isa = PBXBuildFile; fileRef = 490D7F7719898BE600B1DA9B /* item_save.png */; };
+		49332E6D198C1402008B01DF /* Xkiaa.png in Resources */ = {isa = PBXBuildFile; fileRef = 49332E6C198C1402008B01DF /* Xkiaa.png */; };
 		4965F729198A686100BA3D1B /* STANewGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4965F728198A686100BA3D1B /* STANewGroupViewController.m */; };
 		4965F72C198A6A9B00BA3D1B /* STANewItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4965F72B198A6A9B00BA3D1B /* STANewItemsViewController.m */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		490D7F7519898BE600B1DA9B /* group_save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = group_save.png; sourceTree = "<group>"; };
 		490D7F7619898BE600B1DA9B /* item_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = item_close.png; sourceTree = "<group>"; };
 		490D7F7719898BE600B1DA9B /* item_save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = item_save.png; sourceTree = "<group>"; };
+		49332E6C198C1402008B01DF /* Xkiaa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Xkiaa.png; sourceTree = "<group>"; };
 		4965F727198A686100BA3D1B /* STANewGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STANewGroupViewController.h; path = "Simple tasks/STANewGroupViewController.h"; sourceTree = "<group>"; };
 		4965F728198A686100BA3D1B /* STANewGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STANewGroupViewController.m; path = "Simple tasks/STANewGroupViewController.m"; sourceTree = "<group>"; };
 		4965F72A198A6A9B00BA3D1B /* STANewItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STANewItemsViewController.h; path = "Simple tasks/STANewItemsViewController.h"; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 		490D7F7319898B8400B1DA9B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				49332E6C198C1402008B01DF /* Xkiaa.png */,
 				490D7F7419898BE600B1DA9B /* group_close.png */,
 				490D7F7519898BE600B1DA9B /* group_save.png */,
 				490D7F7619898BE600B1DA9B /* item_close.png */,
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				490D7F7A19898BE600B1DA9B /* item_close.png in Resources */,
+				49332E6D198C1402008B01DF /* Xkiaa.png in Resources */,
 				490D7F7919898BE600B1DA9B /* group_save.png in Resources */,
 				490D7F3F19892B2900B1DA9B /* InfoPlist.strings in Resources */,
 				490D7F7B19898BE600B1DA9B /* item_save.png in Resources */,
