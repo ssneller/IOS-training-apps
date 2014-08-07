@@ -80,7 +80,6 @@
     NSMutableArray * items = self.groupInfo[@"items"];  // // must create MutableArray so we can count
     
    // // items = self.groupInfo[@"items"];
-    
     return items.count;     // // counts items
 }
 
@@ -99,21 +98,17 @@
     
     cell.textLabel.text = self.groupInfo[@"items"][indexPath.row][@"name"];   // //at array point // // where it happens
     
-    
     return cell;
 }
 
 
 - (void)addNewItemClicked  // // this references the NewitemVC and sends the window for editing the single item
 {
-    
      STANewItemsViewController * addItemVC = [[STANewItemsViewController alloc]init];   // //VC for adding single items
     
-        addItemVC.items = self.groupInfo[@"items"];
-// //    addItemVC.itemInfo = self.groupInfo[@"items"][indexPath.row];  // // where it is working
+        addItemVC.items = self.groupInfo[@"items"];         // // where it is working
     
     [self.navigationController presentViewController:addItemVC animated:YES completion:nil];    // // pushes the controller and adds a "back" button to the top
-    
 }
 
 
@@ -129,69 +124,53 @@
 }
 
 
-//// ///Need the 3 below to determine path, load the data, and save the data
-//- (void)saveItemData       // // added to viewWillAppear and commitEditingStyle method to be sure that data is saved when view changes or reloads
-//{
-//    NSData * itemData = [NSKeyedArchiver archivedDataWithRootObject:items];   // // the array is just data at this point
-//    [itemData writeToFile:[self itemFilePath] atomically:YES];    // // set itemFilePath from below and atomically makes a temp backup
-//}
-//
-//- (NSMutableArray *)loadItemData       // // loads any "saved" data
-//{
-//    return [NSKeyedUnarchiver unarchiveObjectWithFile:[self itemFilePath]];// // loads any "saved" data
-//}
-//
-//- (NSString * )itemFilePath    // // gets file save path
-//{
-//    NSArray * documentDirectories = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-//    NSString * path = documentDirectories[0];   // // be sure that this is documentDirectories
-//    
-//    // //   NSLog(@"my path is %@", path);
-//    
-//    return [path stringByAppendingPathComponent:@"items.data"];   // // gives you the path for saving
-//    
-//}
-
-
 -(BOOL)prefersStatusBarHidden { return YES; }     // // add to other VCs this removes the statusbar at top of window
 
-/*
+
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
-*/
 
-/*
+
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        
         // Delete the row from the data source
+        [self.items removeObjectAtIndex:indexPath.row]; // // added this line to remove object
+ //       [self.groupInfo removeObjectAtIndex:indexPath.row];  // // added this line to remove object
+        
+        
+ //       [self saveGroupData];   // // added to save data after removing object
+        
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-*/
 
-/*
+
+
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
 {
 }
-*/
 
-/*
+
+
 // Override to support conditional rearranging of the table view.
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the item to be re-orderable.
     return YES;
 }
-*/
+
 
 /*
 #pragma mark - Navigation

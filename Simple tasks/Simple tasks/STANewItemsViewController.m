@@ -32,6 +32,14 @@
     return self;
 }
 
+
+- (void)viewWillAppear:(BOOL)animated       // // runs after dismissVC runs
+{
+    [super viewWillAppear:animated];
+    [self.view reloadInputViews];       // // reloads and updates the data need this for current data status. I think
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -39,7 +47,7 @@
     
     UIView* fieldBar = [[UIView alloc]initWithFrame:CGRectMake(20, 60, SCREEN_WIDTH - 40 , 1)];   // // this is bar across top of window
     fieldBar.backgroundColor = [UIColor blackColor];
-//    [self.view addSubview:fieldBar];
+    [self.view addSubview:fieldBar];
     
     float buttonSize = 100;  // // "buttonsize variable used below
     
@@ -62,41 +70,12 @@
     [cancelButton setImage:cancelButtonImage forState:UIControlStateNormal];
     [self.view addSubview:cancelButton];
     
-    UIView * moveBoth = [[UIView alloc] initWithFrame:CGRectMake(10, 10, 50, 50)];
-//    moveBoth.backgroundColor = [UIColor clearColor];
-    UIImage * moveImage = [UIImage imageNamed:@"Xkiaa.png"];
-    UIButton * moveSpot = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH -60, 30, 40, 40)];
-//    moveSpot.backgroundColor = [UIColor clearColor];
-    [moveSpot setImage:moveImage forState:UIControlStateNormal];
-    
-    [moveSpot addTarget:self action: @selector(imageMoved:withEvent:) forControlEvents:UIControlEventTouchDown];
-    
-    [moveSpot addTarget:self action:@selector(imageMoved:withEvent:) forControlEvents:UIControlEventTouchDragInside];
-
-//    [self.view addSubview:moveSpot];
-    //    [moveBoth addSubview:moveSpot];
-    
     // // alloc and init and using SCREEN_WIDTH constant
     newItemNameTextField = [[UITextField alloc]initWithFrame:CGRectMake(20,30, SCREEN_WIDTH -60, 40)];
-//    newItemNameTextField.backgroundColor = [UIColor clearColor];
+    newItemNameTextField.backgroundColor = [UIColor clearColor];
     newItemNameTextField.layer.borderColor = [UIColor blackColor].CGColor;
     newItemNameTextField.layer.cornerRadius = 5;
-    [newItemNameTextField addTarget:self action: @selector(imageMoved:withEvent:) forControlEvents:UIControlEventTouchDown];
-    
-    [newItemNameTextField addTarget:self action:@selector(imageMoved:withEvent:) forControlEvents:UIControlEventTouchDragInside];
-
-    //   newItemNameTextField.font = [UIFont fontWithName:@"Courier" size: 48.0];
-    //   [newItemNameTextField setText:@"Item"];
-//    [self.view addSubview:newItemNameTextField];
-    
-    [moveBoth addSubview:moveSpot];
-    [moveBoth addSubview:fieldBar];
-    [moveBoth addSubview:newItemNameTextField];
-    [self.view addSubview:moveBoth];
-    
-    //  [moveBoth addSubview:moveSpot];
-    //   [moveBoth addSubview:moveImage];
-    
+    [self.view addSubview:newItemNameTextField];
 }
 
 
@@ -114,11 +93,9 @@
     [self.items addObject:[@{                       // // adds the Group objects and items in a subarray
                              @"name": newItemNameTextField.text,
                              @"priority":@0
-                             
                              } mutableCopy]];  // // must be mutable copy to be able to change
     [self cancelButtonClicked];   // //    closes window after save  by calling cancel    // //
 }
-
 
 
 -(void)cancelButtonClicked
@@ -126,15 +103,6 @@
     NSLog(@"friggin cancel clicked");
     [self dismissViewControllerAnimated:YES completion:nil];   //  // returns to previous window "pops" the view
 }
-
-
-
--(IBAction) imageMoved:(id) sender withEvent:(UIEvent *) event
-    {
-            CGPoint point = [[[event allTouches] anyObject] locationInView:self.view];
-            UIControl *control = sender;
-            control.center = point;
-        }
 
 
 -(BOOL)prefersStatusBarHidden { return YES; }     // // add to other VCs this removes the statusbar at top of window

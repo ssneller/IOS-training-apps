@@ -11,5 +11,7 @@
 @interface STAEditItemViewController : UIViewController
 
 @property (nonatomic) NSMutableDictionary * itemInfo;   // // makes the itemInfo public
+@property(nonatomic) BOOL showsReorderControl;
+@property (nonatomic) float buttonYPosition;
 
 @end
