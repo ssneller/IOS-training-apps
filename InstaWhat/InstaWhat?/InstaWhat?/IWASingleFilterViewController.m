@@ -52,8 +52,6 @@
         [submitButton setTitle:@"SUBMIT" forState:UIControlStateNormal];
         [submitButton addTarget:self action:@selector(submitPost) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:submitButton];
-        
-        
     }
     return self;
 }
