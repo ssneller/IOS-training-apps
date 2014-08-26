@@ -107,7 +107,7 @@
 - (void)viewDidLoad
 {
     
-    
+    [super viewDidLoad];
     
     UIView * headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 100)];///spaces the cells down
     
@@ -141,7 +141,7 @@
     
 
 
-    [super viewDidLoad];
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

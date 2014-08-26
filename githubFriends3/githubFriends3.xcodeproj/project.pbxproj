@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4982C61D19828B9F007AB83E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4982C61C19828B9F007AB83E /* main.m */; };
-		4982C62019828B9F007AB83E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4982C61F19828B9F007AB83E /* AppDelegate.m */; };
-		4982C62319828B9F007AB83E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4982C62219828B9F007AB83E /* ViewController.m */; };
 		4982C62619828B9F007AB83E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4982C62419828B9F007AB83E /* Main.storyboard */; };
 		4982C62819828B9F007AB83E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4982C62719828B9F007AB83E /* Images.xcassets */; };
 		4982C63419828B9F007AB83E /* githubFriends3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4982C63319828B9F007AB83E /* githubFriends3Tests.m */; };
@@ -32,10 +30,6 @@
 		4982C61719828B9F007AB83E /* githubFriends3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = githubFriends3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4982C61B19828B9F007AB83E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4982C61C19828B9F007AB83E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4982C61E19828B9F007AB83E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4982C61F19828B9F007AB83E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4982C62119828B9F007AB83E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4982C62219828B9F007AB83E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4982C62519828B9F007AB83E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4982C62719828B9F007AB83E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4982C62D19828B9F007AB83E /* githubFriends3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = githubFriends3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,10 +83,6 @@
 		4982C61919828B9F007AB83E /* githubFriends3 */ = {
 			isa = PBXGroup;
 			children = (
-				4982C61E19828B9F007AB83E /* AppDelegate.h */,
-				4982C61F19828B9F007AB83E /* AppDelegate.m */,
-				4982C62119828B9F007AB83E /* ViewController.h */,
-				4982C62219828B9F007AB83E /* ViewController.m */,
 				4982C63D19828C29007AB83E /* GFAAppDelegate.h */,
 				4982C63E19828C29007AB83E /* GFAAppDelegate.m */,
 				4982C62419828B9F007AB83E /* Main.storyboard */,
@@ -239,10 +229,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4982C62319828B9F007AB83E /* ViewController.m in Sources */,
 				4982C63F19828C29007AB83E /* GFAAppDelegate.m in Sources */,
 				4982C64619828C6E007AB83E /* GFATableViewCell.m in Sources */,
-				4982C62019828B9F007AB83E /* AppDelegate.m in Sources */,
 				4982C64519828C6E007AB83E /* GFATableViewController.m in Sources */,
 				4982C61D19828B9F007AB83E /* main.m in Sources */,
 			);
@@ -360,8 +348,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = githubFriends3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -371,8 +361,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = githubFriends3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -389,6 +381,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = githubFriends3Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -404,6 +397,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = githubFriends3Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -429,6 +423,7 @@
 				4982C63919828B9F007AB83E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4982C63A19828B9F007AB83E /* Build configuration list for PBXNativeTarget "githubFriends3Tests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +432,7 @@
 				4982C63C19828B9F007AB83E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
