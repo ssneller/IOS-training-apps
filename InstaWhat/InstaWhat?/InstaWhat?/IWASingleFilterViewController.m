@@ -27,7 +27,6 @@
     if (self) {
         // Custom initialization
         
-        
         UIView * masterView = [[ UIView alloc] initWithFrame:CGRectMake(0, 0, 768, 1024)];
  //       UIView * masterView = [[ UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
         masterView.backgroundColor = [UIColor whiteColor];
@@ -67,18 +66,15 @@
 
 -(void) submitPost
 {
-    NSString * postInfo = [[NSString alloc]init];
-        postInfo = postTextView.text;
-        NSLog(@"%@", postInfo);
+//    NSString * postInfo = [[NSString alloc]init];
+//        postInfo = postTextView.text;
+//        NSLog(@"%@", postInfo);
         postTextView.text = @"";
         [postTextView resignFirstResponder];
-    
+    // // save textview and png file
     PFObject * face = [PFObject objectWithClassName:@"Faces"];
-    
     [face setObject:postTextView.text forKey:@"text"];
-    
     NSData * data = UIImagePNGRepresentation(imageView1.image);
-    
     PFFile * file = [PFFile fileWithData:data];
     [face setObject:file forKey:@"image"];
     [face saveInBackground];
