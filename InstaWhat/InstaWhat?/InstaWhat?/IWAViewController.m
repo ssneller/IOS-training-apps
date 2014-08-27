@@ -117,7 +117,7 @@
 
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{       // // setup cells forthumbnails for array
+{       // // setup cells for thumbnails for array
     UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     ALAsset * photo = photos[indexPath.item];
     UIImageView * thumbnailView = [[UIImageView alloc]initWithFrame:cell.bounds];
