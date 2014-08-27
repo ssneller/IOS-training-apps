@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4941935319A57AEC00453146 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4941935219A57AEC00453146 /* Foundation.framework */; };
+		4941935519A57AEC00453146 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4941935419A57AEC00453146 /* CoreGraphics.framework */; };
+		4941935719A57AEC00453146 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4941935619A57AEC00453146 /* UIKit.framework */; };
+		4941935D19A57AEC00453146 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4941935B19A57AEC00453146 /* InfoPlist.strings */; };
+		4941935F19A57AEC00453146 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4941935E19A57AEC00453146 /* main.m */; };
+		4941936319A57AEC00453146 /* MFCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4941936219A57AEC00453146 /* MFCAppDelegate.m */; };
+		4941936519A57AEC00453146 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4941936419A57AEC00453146 /* Images.xcassets */; };
+		4941936C19A57AEC00453146 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4941936B19A57AEC00453146 /* XCTest.framework */; };
+		4941936D19A57AEC00453146 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4941935219A57AEC00453146 /* Foundation.framework */; };
+		4941936E19A57AEC00453146 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4941935619A57AEC00453146 /* UIKit.framework */; };
+		4941937619A57AEC00453146 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4941937419A57AEC00453146 /* InfoPlist.strings */; };
+		4941937819A57AEC00453146 /* MyFaceIsCool_MTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4941937719A57AEC00453146 /* MyFaceIsCool_MTests.m */; };
+		4941938319A57D7A00453146 /* MFCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4941938219A57D7A00453146 /* MFCViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4941936F19A57AEC00453146 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4941934719A57AEC00453146 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4941934E19A57AEC00453146;
+			remoteInfo = "MyFaceIsCool-M";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4941934F19A57AEC00453146 /* MyFaceIsCool-M.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyFaceIsCool-M.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4941935219A57AEC00453146 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4941935419A57AEC00453146 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4941935619A57AEC00453146 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4941935A19A57AEC00453146 /* MyFaceIsCool-M-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyFaceIsCool-M-Info.plist"; sourceTree = "<group>"; };
+		4941935C19A57AEC00453146 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4941935E19A57AEC00453146 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4941936019A57AEC00453146 /* MyFaceIsCool-M-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyFaceIsCool-M-Prefix.pch"; sourceTree = "<group>"; };
+		4941936119A57AEC00453146 /* MFCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFCAppDelegate.h; sourceTree = "<group>"; };
+		4941936219A57AEC00453146 /* MFCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFCAppDelegate.m; sourceTree = "<group>"; };
+		4941936419A57AEC00453146 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4941936A19A57AEC00453146 /* MyFaceIsCool-MTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MyFaceIsCool-MTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4941936B19A57AEC00453146 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4941937319A57AEC00453146 /* MyFaceIsCool-MTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyFaceIsCool-MTests-Info.plist"; sourceTree = "<group>"; };
+		4941937519A57AEC00453146 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4941937719A57AEC00453146 /* MyFaceIsCool_MTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFaceIsCool_MTests.m; sourceTree = "<group>"; };
+		4941938119A57D7A00453146 /* MFCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFCViewController.h; sourceTree = "<group>"; };
+		4941938219A57D7A00453146 /* MFCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFCViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4941934C19A57AEC00453146 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4941935519A57AEC00453146 /* CoreGraphics.framework in Frameworks */,
+				4941935719A57AEC00453146 /* UIKit.framework in Frameworks */,
+				4941935319A57AEC00453146 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4941936719A57AEC00453146 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4941936C19A57AEC00453146 /* XCTest.framework in Frameworks */,
+				4941936E19A57AEC00453146 /* UIKit.framework in Frameworks */,
+				4941936D19A57AEC00453146 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4941934619A57AEC00453146 = {
+			isa = PBXGroup;
+			children = (
+				4941935819A57AEC00453146 /* MyFaceIsCool-M */,
+				4941937119A57AEC00453146 /* MyFaceIsCool-MTests */,
+				4941935119A57AEC00453146 /* Frameworks */,
+				4941935019A57AEC00453146 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4941935019A57AEC00453146 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4941934F19A57AEC00453146 /* MyFaceIsCool-M.app */,
+				4941936A19A57AEC00453146 /* MyFaceIsCool-MTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4941935119A57AEC00453146 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4941935219A57AEC00453146 /* Foundation.framework */,
+				4941935419A57AEC00453146 /* CoreGraphics.framework */,
+				4941935619A57AEC00453146 /* UIKit.framework */,
+				4941936B19A57AEC00453146 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4941935819A57AEC00453146 /* MyFaceIsCool-M */ = {
+			isa = PBXGroup;
+			children = (
+				4941938119A57D7A00453146 /* MFCViewController.h */,
+				4941938219A57D7A00453146 /* MFCViewController.m */,
+				4941936119A57AEC00453146 /* MFCAppDelegate.h */,
+				4941936219A57AEC00453146 /* MFCAppDelegate.m */,
+				4941936419A57AEC00453146 /* Images.xcassets */,
+				4941935919A57AEC00453146 /* Supporting Files */,
+			);
+			path = "MyFaceIsCool-M";
+			sourceTree = "<group>";
+		};
+		4941935919A57AEC00453146 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4941935A19A57AEC00453146 /* MyFaceIsCool-M-Info.plist */,
+				4941935B19A57AEC00453146 /* InfoPlist.strings */,
+				4941935E19A57AEC00453146 /* main.m */,
+				4941936019A57AEC00453146 /* MyFaceIsCool-M-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4941937119A57AEC00453146 /* MyFaceIsCool-MTests */ = {
+			isa = PBXGroup;
+			children = (
+				4941937719A57AEC00453146 /* MyFaceIsCool_MTests.m */,
+				4941937219A57AEC00453146 /* Supporting Files */,
+			);
+			path = "MyFaceIsCool-MTests";
+			sourceTree = "<group>";
+		};
+		4941937219A57AEC00453146 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4941937319A57AEC00453146 /* MyFaceIsCool-MTests-Info.plist */,
+				4941937419A57AEC00453146 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4941934E19A57AEC00453146 /* MyFaceIsCool-M */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4941937B19A57AEC00453146 /* Build configuration list for PBXNativeTarget "MyFaceIsCool-M" */;
+			buildPhases = (
+				4941934B19A57AEC00453146 /* Sources */,
+				4941934C19A57AEC00453146 /* Frameworks */,
+				4941934D19A57AEC00453146 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MyFaceIsCool-M";
+			productName = "MyFaceIsCool-M";
+			productReference = 4941934F19A57AEC00453146 /* MyFaceIsCool-M.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4941936919A57AEC00453146 /* MyFaceIsCool-MTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4941937E19A57AEC00453146 /* Build configuration list for PBXNativeTarget "MyFaceIsCool-MTests" */;
+			buildPhases = (
+				4941936619A57AEC00453146 /* Sources */,
+				4941936719A57AEC00453146 /* Frameworks */,
+				4941936819A57AEC00453146 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4941937019A57AEC00453146 /* PBXTargetDependency */,
+			);
+			name = "MyFaceIsCool-MTests";
+			productName = "MyFaceIsCool-MTests";
+			productReference = 4941936A19A57AEC00453146 /* MyFaceIsCool-MTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4941934719A57AEC00453146 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MFC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Steve Sneller";
+				TargetAttributes = {
+					4941936919A57AEC00453146 = {
+						TestTargetID = 4941934E19A57AEC00453146;
+					};
+				};
+			};
+			buildConfigurationList = 4941934A19A57AEC00453146 /* Build configuration list for PBXProject "MyFaceIsCool-M" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4941934619A57AEC00453146;
+			productRefGroup = 4941935019A57AEC00453146 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4941934E19A57AEC00453146 /* MyFaceIsCool-M */,
+				4941936919A57AEC00453146 /* MyFaceIsCool-MTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4941934D19A57AEC00453146 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4941935D19A57AEC00453146 /* InfoPlist.strings in Resources */,
+				4941936519A57AEC00453146 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4941936819A57AEC00453146 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4941937619A57AEC00453146 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4941934B19A57AEC00453146 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4941935F19A57AEC00453146 /* main.m in Sources */,
+				4941936319A57AEC00453146 /* MFCAppDelegate.m in Sources */,
+				4941938319A57D7A00453146 /* MFCViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4941936619A57AEC00453146 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4941937819A57AEC00453146 /* MyFaceIsCool_MTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4941937019A57AEC00453146 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4941934E19A57AEC00453146 /* MyFaceIsCool-M */;
+			targetProxy = 4941936F19A57AEC00453146 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4941935B19A57AEC00453146 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4941935C19A57AEC00453146 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4941937419A57AEC00453146 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4941937519A57AEC00453146 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4941937919A57AEC00453146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4941937A19A57AEC00453146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4941937C19A57AEC00453146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyFaceIsCool-M/MyFaceIsCool-M-Prefix.pch";
+				INFOPLIST_FILE = "MyFaceIsCool-M/MyFaceIsCool-M-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4941937D19A57AEC00453146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyFaceIsCool-M/MyFaceIsCool-M-Prefix.pch";
+				INFOPLIST_FILE = "MyFaceIsCool-M/MyFaceIsCool-M-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4941937F19A57AEC00453146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyFaceIsCool-M.app/MyFaceIsCool-M";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyFaceIsCool-M/MyFaceIsCool-M-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MyFaceIsCool-MTests/MyFaceIsCool-MTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4941938019A57AEC00453146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyFaceIsCool-M.app/MyFaceIsCool-M";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyFaceIsCool-M/MyFaceIsCool-M-Prefix.pch";
+				INFOPLIST_FILE = "MyFaceIsCool-MTests/MyFaceIsCool-MTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4941934A19A57AEC00453146 /* Build configuration list for PBXProject "MyFaceIsCool-M" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4941937919A57AEC00453146 /* Debug */,
+				4941937A19A57AEC00453146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4941937B19A57AEC00453146 /* Build configuration list for PBXNativeTarget "MyFaceIsCool-M" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4941937C19A57AEC00453146 /* Debug */,
+				4941937D19A57AEC00453146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4941937E19A57AEC00453146 /* Build configuration list for PBXNativeTarget "MyFaceIsCool-MTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4941937F19A57AEC00453146 /* Debug */,
+				4941938019A57AEC00453146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4941934719A57AEC00453146 /* Project object */;
+}

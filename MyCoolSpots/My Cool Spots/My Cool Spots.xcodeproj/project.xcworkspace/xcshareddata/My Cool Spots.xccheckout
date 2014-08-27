@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5897F4D1-22DA-4DD8-8BE9-87FEA4F7B8DB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>My Cool Spots</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>41E6DDA9-AA32-4B65-A296-EAD7CF5B64DA</key>
+		<string>https://github.com/ssneller/IOS-training-apps.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MyCoolSpots/My Cool Spots/My Cool Spots.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>41E6DDA9-AA32-4B65-A296-EAD7CF5B64DA</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ssneller/IOS-training-apps.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>41E6DDA9-AA32-4B65-A296-EAD7CF5B64DA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>41E6DDA9-AA32-4B65-A296-EAD7CF5B64DA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IOS-training-apps</string>
+		</dict>
+	</array>
+</dict>
+</plist>

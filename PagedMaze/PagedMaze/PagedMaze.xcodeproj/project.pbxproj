@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		495FED5419A27134001277BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495FED5319A27134001277BA /* Foundation.framework */; };
+		495FED5619A27134001277BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495FED5519A27134001277BA /* CoreGraphics.framework */; };
+		495FED5819A27134001277BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495FED5719A27134001277BA /* UIKit.framework */; };
+		495FED5E19A27134001277BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 495FED5C19A27134001277BA /* InfoPlist.strings */; };
+		495FED6019A27134001277BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 495FED5F19A27134001277BA /* main.m */; };
+		495FED6419A27134001277BA /* MAZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 495FED6319A27134001277BA /* MAZAppDelegate.m */; };
+		495FED6719A27134001277BA /* MAZRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495FED6619A27134001277BA /* MAZRootViewController.m */; };
+		495FED6A19A27134001277BA /* MAZDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495FED6919A27134001277BA /* MAZDataViewController.m */; };
+		495FED6D19A27134001277BA /* MAZModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495FED6C19A27134001277BA /* MAZModelController.m */; };
+		495FED7019A27134001277BA /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495FED6E19A27134001277BA /* Main_iPhone.storyboard */; };
+		495FED7319A27134001277BA /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495FED7119A27134001277BA /* Main_iPad.storyboard */; };
+		495FED7519A27134001277BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495FED7419A27134001277BA /* Images.xcassets */; };
+		495FED7C19A27134001277BA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495FED7B19A27134001277BA /* XCTest.framework */; };
+		495FED7D19A27134001277BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495FED5319A27134001277BA /* Foundation.framework */; };
+		495FED7E19A27135001277BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495FED5719A27134001277BA /* UIKit.framework */; };
+		495FED8619A27135001277BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 495FED8419A27135001277BA /* InfoPlist.strings */; };
+		495FED8819A27135001277BA /* PagedMazeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 495FED8719A27135001277BA /* PagedMazeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		495FED7F19A27135001277BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 495FED4819A27134001277BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 495FED4F19A27134001277BA;
+			remoteInfo = PagedMaze;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		495FED5019A27134001277BA /* PagedMaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagedMaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		495FED5319A27134001277BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		495FED5519A27134001277BA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		495FED5719A27134001277BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		495FED5B19A27134001277BA /* PagedMaze-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PagedMaze-Info.plist"; sourceTree = "<group>"; };
+		495FED5D19A27134001277BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		495FED5F19A27134001277BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		495FED6119A27134001277BA /* PagedMaze-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PagedMaze-Prefix.pch"; sourceTree = "<group>"; };
+		495FED6219A27134001277BA /* MAZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAZAppDelegate.h; sourceTree = "<group>"; };
+		495FED6319A27134001277BA /* MAZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAZAppDelegate.m; sourceTree = "<group>"; };
+		495FED6519A27134001277BA /* MAZRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAZRootViewController.h; sourceTree = "<group>"; };
+		495FED6619A27134001277BA /* MAZRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAZRootViewController.m; sourceTree = "<group>"; };
+		495FED6819A27134001277BA /* MAZDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAZDataViewController.h; sourceTree = "<group>"; };
+		495FED6919A27134001277BA /* MAZDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAZDataViewController.m; sourceTree = "<group>"; };
+		495FED6B19A27134001277BA /* MAZModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAZModelController.h; sourceTree = "<group>"; };
+		495FED6C19A27134001277BA /* MAZModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAZModelController.m; sourceTree = "<group>"; };
+		495FED6F19A27134001277BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		495FED7219A27134001277BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		495FED7419A27134001277BA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		495FED7A19A27134001277BA /* PagedMazeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PagedMazeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		495FED7B19A27134001277BA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		495FED8319A27135001277BA /* PagedMazeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PagedMazeTests-Info.plist"; sourceTree = "<group>"; };
+		495FED8519A27135001277BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		495FED8719A27135001277BA /* PagedMazeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PagedMazeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		495FED4D19A27134001277BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495FED5619A27134001277BA /* CoreGraphics.framework in Frameworks */,
+				495FED5819A27134001277BA /* UIKit.framework in Frameworks */,
+				495FED5419A27134001277BA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495FED7719A27134001277BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495FED7C19A27134001277BA /* XCTest.framework in Frameworks */,
+				495FED7E19A27135001277BA /* UIKit.framework in Frameworks */,
+				495FED7D19A27134001277BA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		495FED4719A27134001277BA = {
+			isa = PBXGroup;
+			children = (
+				495FED5919A27134001277BA /* PagedMaze */,
+				495FED8119A27135001277BA /* PagedMazeTests */,
+				495FED5219A27134001277BA /* Frameworks */,
+				495FED5119A27134001277BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		495FED5119A27134001277BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				495FED5019A27134001277BA /* PagedMaze.app */,
+				495FED7A19A27134001277BA /* PagedMazeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		495FED5219A27134001277BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				495FED5319A27134001277BA /* Foundation.framework */,
+				495FED5519A27134001277BA /* CoreGraphics.framework */,
+				495FED5719A27134001277BA /* UIKit.framework */,
+				495FED7B19A27134001277BA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		495FED5919A27134001277BA /* PagedMaze */ = {
+			isa = PBXGroup;
+			children = (
+				495FED6219A27134001277BA /* MAZAppDelegate.h */,
+				495FED6319A27134001277BA /* MAZAppDelegate.m */,
+				495FED6519A27134001277BA /* MAZRootViewController.h */,
+				495FED6619A27134001277BA /* MAZRootViewController.m */,
+				495FED6819A27134001277BA /* MAZDataViewController.h */,
+				495FED6919A27134001277BA /* MAZDataViewController.m */,
+				495FED6B19A27134001277BA /* MAZModelController.h */,
+				495FED6C19A27134001277BA /* MAZModelController.m */,
+				495FED6E19A27134001277BA /* Main_iPhone.storyboard */,
+				495FED7119A27134001277BA /* Main_iPad.storyboard */,
+				495FED7419A27134001277BA /* Images.xcassets */,
+				495FED5A19A27134001277BA /* Supporting Files */,
+			);
+			path = PagedMaze;
+			sourceTree = "<group>";
+		};
+		495FED5A19A27134001277BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				495FED5B19A27134001277BA /* PagedMaze-Info.plist */,
+				495FED5C19A27134001277BA /* InfoPlist.strings */,
+				495FED5F19A27134001277BA /* main.m */,
+				495FED6119A27134001277BA /* PagedMaze-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		495FED8119A27135001277BA /* PagedMazeTests */ = {
+			isa = PBXGroup;
+			children = (
+				495FED8719A27135001277BA /* PagedMazeTests.m */,
+				495FED8219A27135001277BA /* Supporting Files */,
+			);
+			path = PagedMazeTests;
+			sourceTree = "<group>";
+		};
+		495FED8219A27135001277BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				495FED8319A27135001277BA /* PagedMazeTests-Info.plist */,
+				495FED8419A27135001277BA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		495FED4F19A27134001277BA /* PagedMaze */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 495FED8B19A27135001277BA /* Build configuration list for PBXNativeTarget "PagedMaze" */;
+			buildPhases = (
+				495FED4C19A27134001277BA /* Sources */,
+				495FED4D19A27134001277BA /* Frameworks */,
+				495FED4E19A27134001277BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PagedMaze;
+			productName = PagedMaze;
+			productReference = 495FED5019A27134001277BA /* PagedMaze.app */;
+			productType = "com.apple.product-type.application";
+		};
+		495FED7919A27134001277BA /* PagedMazeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 495FED8E19A27135001277BA /* Build configuration list for PBXNativeTarget "PagedMazeTests" */;
+			buildPhases = (
+				495FED7619A27134001277BA /* Sources */,
+				495FED7719A27134001277BA /* Frameworks */,
+				495FED7819A27134001277BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				495FED8019A27135001277BA /* PBXTargetDependency */,
+			);
+			name = PagedMazeTests;
+			productName = PagedMazeTests;
+			productReference = 495FED7A19A27134001277BA /* PagedMazeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		495FED4819A27134001277BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MAZ;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Steve Sneller";
+				TargetAttributes = {
+					495FED7919A27134001277BA = {
+						TestTargetID = 495FED4F19A27134001277BA;
+					};
+				};
+			};
+			buildConfigurationList = 495FED4B19A27134001277BA /* Build configuration list for PBXProject "PagedMaze" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 495FED4719A27134001277BA;
+			productRefGroup = 495FED5119A27134001277BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				495FED4F19A27134001277BA /* PagedMaze */,
+				495FED7919A27134001277BA /* PagedMazeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		495FED4E19A27134001277BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495FED7319A27134001277BA /* Main_iPad.storyboard in Resources */,
+				495FED7519A27134001277BA /* Images.xcassets in Resources */,
+				495FED7019A27134001277BA /* Main_iPhone.storyboard in Resources */,
+				495FED5E19A27134001277BA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495FED7819A27134001277BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495FED8619A27135001277BA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		495FED4C19A27134001277BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495FED6019A27134001277BA /* main.m in Sources */,
+				495FED6419A27134001277BA /* MAZAppDelegate.m in Sources */,
+				495FED6719A27134001277BA /* MAZRootViewController.m in Sources */,
+				495FED6D19A27134001277BA /* MAZModelController.m in Sources */,
+				495FED6A19A27134001277BA /* MAZDataViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		495FED7619A27134001277BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495FED8819A27135001277BA /* PagedMazeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		495FED8019A27135001277BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 495FED4F19A27134001277BA /* PagedMaze */;
+			targetProxy = 495FED7F19A27135001277BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		495FED5C19A27134001277BA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				495FED5D19A27134001277BA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		495FED6E19A27134001277BA /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				495FED6F19A27134001277BA /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		495FED7119A27134001277BA /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				495FED7219A27134001277BA /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		495FED8419A27135001277BA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				495FED8519A27135001277BA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		495FED8919A27135001277BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		495FED8A19A27135001277BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		495FED8C19A27135001277BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PagedMaze/PagedMaze-Prefix.pch";
+				INFOPLIST_FILE = "PagedMaze/PagedMaze-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		495FED8D19A27135001277BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PagedMaze/PagedMaze-Prefix.pch";
+				INFOPLIST_FILE = "PagedMaze/PagedMaze-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		495FED8F19A27135001277BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PagedMaze.app/PagedMaze";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PagedMaze/PagedMaze-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PagedMazeTests/PagedMazeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		495FED9019A27135001277BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PagedMaze.app/PagedMaze";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PagedMaze/PagedMaze-Prefix.pch";
+				INFOPLIST_FILE = "PagedMazeTests/PagedMazeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		495FED4B19A27134001277BA /* Build configuration list for PBXProject "PagedMaze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495FED8919A27135001277BA /* Debug */,
+				495FED8A19A27135001277BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		495FED8B19A27135001277BA /* Build configuration list for PBXNativeTarget "PagedMaze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495FED8C19A27135001277BA /* Debug */,
+				495FED8D19A27135001277BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		495FED8E19A27135001277BA /* Build configuration list for PBXNativeTarget "PagedMazeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495FED8F19A27135001277BA /* Debug */,
+				495FED9019A27135001277BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 495FED4819A27134001277BA /* Project object */;
+}

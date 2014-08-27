@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>223BACD9-F5C1-4D3A-B034-4B1CD3617D1A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TheList</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>39D03F2C154A1BF9CB268FBFA83D2D12454690C3</key>
+		<string>https://github.com/ssneller/TheList5.git</string>
+		<key>51B2BAA11FE869E9C821193615ED68A6391FC4AE</key>
+		<string>https://github.com/ssneller/IOS-training-apps.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TheList/TheList.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>39D03F2C154A1BF9CB268FBFA83D2D12454690C3</key>
+		<string>../../..</string>
+		<key>51B2BAA11FE869E9C821193615ED68A6391FC4AE</key>
+		<string>../../../../IOS-training-apps</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ssneller/TheList5.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>39D03F2C154A1BF9CB268FBFA83D2D12454690C3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>51B2BAA11FE869E9C821193615ED68A6391FC4AE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IOS-training-apps</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>39D03F2C154A1BF9CB268FBFA83D2D12454690C3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TheList5</string>
+		</dict>
+	</array>
+</dict>
+</plist>

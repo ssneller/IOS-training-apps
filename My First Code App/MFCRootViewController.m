@@ -155,7 +155,7 @@
     return YES;   /// nothing executes after return
 }
 
--(void)loginButtonClicked   /// loginButton method /// we are not doing anything here...
+-(void)loginButtonClicked   /// loginBrutton method /// we are not doing anything here...
 {
     ///   self.view.backgroundColor = [UIColor whiteColor];   /// changes background color when button is clicked
     NSLog(@"Button Clicked");   /// added to print status
