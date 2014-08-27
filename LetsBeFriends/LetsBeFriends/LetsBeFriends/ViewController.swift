@@ -14,7 +14,11 @@ class ViewController: UIViewController {
     var signupHolder = UIView()
     var buttonsHolder = UIView()
     var fieldData: [String:UITextField]!
-                            
+    var teamHolder = UIView()
+    let halfHeight = UIScreen.mainScreen().bounds.size.height/2.0
+    let SCREEN_WIDTH = UIScreen.mainScreen().bounds.size.width
+    let SCREEN_HEIGHT = UIScreen.mainScreen().bounds.size.height
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -48,6 +52,7 @@ class ViewController: UIViewController {
         
         var usernameField = UITextField(frame: CGRectMake(10, 200, 300, 40))
         usernameField.placeholder = "Username"
+        usernameField.autocapitalizationType = UITextAutocapitalizationType.None
         loginHolder.addSubview(usernameField)
         
         var passwordField = UITextField(frame: CGRectMake(10, 250, 300, 40))
@@ -81,11 +86,12 @@ class ViewController: UIViewController {
         var emailField = UITextField(frame: CGRectMake(10, 150, 300, 40))
         
         emailField.placeholder = "Email"
-        
+        emailField.autocapitalizationType = UITextAutocapitalizationType.None
         emailField.keyboardType = UIKeyboardType.EmailAddress
         signupHolder.addSubview(emailField)
         
         var usernameField = UITextField(frame: CGRectMake(10, 200, 300, 40))
+        usernameField.autocapitalizationType = UITextAutocapitalizationType.None
         usernameField.placeholder = "Username"
         signupHolder.addSubview(usernameField)
         
@@ -226,19 +232,8 @@ class ViewController: UIViewController {
         var userQuery = PFUser.query()
         userQuery.whereKey("team", equalTo: otherteam)
         
-        
-//        userQuery.findObjectsInBackgroundWithBlock { (objects:[AnyObject]!, error: NSError!) -> Void in
-//            println("users \(objects)")
-//        }
-//        
-        
-        
         var deviceQuery = PFInstallation.query()
         deviceQuery.whereKey("user", matchesQuery: userQuery)
-        
-//        deviceQuery.findObjectsInBackgroundWithBlock { (objects:[AnyObject]!, error: NSError!) -> Void in
-//            println("users \(objects)")
-//        }
         
         var push = PFPush()
         
