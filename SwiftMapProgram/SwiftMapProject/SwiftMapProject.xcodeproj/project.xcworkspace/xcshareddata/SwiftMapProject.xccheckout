@@ -5,35 +5,27 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>5897F4D1-22DA-4DD8-8BE9-87FEA4F7B8DB</string>
+	<string>9893221A-AA13-4F34-B6D8-FA83702ED64F</string>
 	<key>IDESourceControlProjectName</key>
-	<string>My Cool Spots</string>
+	<string>SwiftMapProject</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>41E6DDA9-AA32-4B65-A296-EAD7CF5B64DA</key>
-		<string>https://github.com/ssneller/IOS-training-apps.git</string>
 		<key>51B2BAA11FE869E9C821193615ED68A6391FC4AE</key>
 		<string>https://github.com/ssneller/IOS-training-apps.git</string>
-		<key>B7FFF3D8CE080C7F15063FCAFCAC7063F36B9AAF</key>
-		<string>https://github.com/ssneller/MyCoolSpots.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>My Cool Spots/My Cool Spots.xcodeproj</string>
+	<string>SwiftMapProgram/SwiftMapProject/SwiftMapProject.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>41E6DDA9-AA32-4B65-A296-EAD7CF5B64DA</key>
-		<string>../../../../IOS-training-apps</string>
 		<key>51B2BAA11FE869E9C821193615ED68A6391FC4AE</key>
 		<string>../../../..</string>
-		<key>B7FFF3D8CE080C7F15063FCAFCAC7063F36B9AAF</key>
-		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/ssneller/MyCoolSpots.git</string>
+	<string>https://github.com/ssneller/IOS-training-apps.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>B7FFF3D8CE080C7F15063FCAFCAC7063F36B9AAF</string>
+	<string>51B2BAA11FE869E9C821193615ED68A6391FC4AE</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -42,23 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>51B2BAA11FE869E9C821193615ED68A6391FC4AE</string>
 			<key>IDESourceControlWCCName</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>41E6DDA9-AA32-4B65-A296-EAD7CF5B64DA</string>
-			<key>IDESourceControlWCCName</key>
 			<string>IOS-training-apps</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>B7FFF3D8CE080C7F15063FCAFCAC7063F36B9AAF</string>
-			<key>IDESourceControlWCCName</key>
-			<string>MyCoolSpots</string>
 		</dict>
 	</array>
 </dict>
