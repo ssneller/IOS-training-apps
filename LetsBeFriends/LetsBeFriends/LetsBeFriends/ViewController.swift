@@ -168,8 +168,8 @@ class ViewController: UIViewController {
         }
     }
     
-    var teamHolder = UIView()
-    let halfHeight = UIScreen.mainScreen().bounds.size.height/2.0
+// //    var teamHolder = UIView()
+// //    let halfHeight = UIScreen.mainScreen().bounds.size.height/2.0
     
     func showTeams() {
         

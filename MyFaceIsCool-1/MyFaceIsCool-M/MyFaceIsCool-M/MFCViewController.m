@@ -10,8 +10,6 @@
 
 #import <AVFoundation/AVFoundation.h>
 
-#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
-#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
 @interface MFCViewController () <UIImagePickerControllerDelegate>
 
@@ -39,17 +37,17 @@
         UIView * mainView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_HEIGHT, SCREEN_WIDTH)];
         [self.view addSubview:mainView];
         
-        UIImageView * photoView = [[ UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_HEIGHT * 0.8, SCREEN_WIDTH)];
+        UIImageView * photoView = [[ UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_HEIGHT * 0.75, SCREEN_WIDTH)];
         [self.view addSubview:photoView];
         
-        UIButton * takePhoto = [[UIButton alloc]initWithFrame:CGRectMake((SCREEN_WIDTH / 2) - 60, SCREEN_HEIGHT * 0.9, 120, 40)];
+        UIButton * takePhoto = [[UIButton alloc]initWithFrame:CGRectMake((SCREEN_WIDTH / 2) - 60, SCREEN_HEIGHT * 0.85, 120, 30)];
         takePhoto.backgroundColor = [UIColor lightGrayColor];
         takePhoto.layer.cornerRadius = 10;
         [takePhoto setTitle:@"Take Photo" forState:UIControlStateNormal];
         [takePhoto addTarget:self action:@selector(takePhoto:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:takePhoto];
         
-        UIButton * selectPhoto = [[UIButton alloc]initWithFrame:CGRectMake((SCREEN_WIDTH / 2) - 60, SCREEN_HEIGHT * 0.95, 120, 40)];
+        UIButton * selectPhoto = [[UIButton alloc]initWithFrame:CGRectMake((SCREEN_WIDTH / 2) - 60, SCREEN_HEIGHT * 0.90, 120, 30)];
         selectPhoto.backgroundColor = [UIColor lightGrayColor];
         selectPhoto.layer.cornerRadius = 10;
         [selectPhoto setTitle:@"Select Photo" forState:UIControlStateNormal];

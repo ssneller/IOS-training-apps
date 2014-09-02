@@ -5,35 +5,27 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>44D98B28-E7F7-43D9-84FD-C098EF12CC49</string>
+	<string>5C363336-1DEE-4EBC-B5B6-0BA8C0C33FE7</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Simple Form App</string>
+	<string>Heidi BLah</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>0AB604AF40AB467E4583B7BC64306EE3ADE3D32E</key>
-		<string>https://github.com/ssneller/Simple-Form-App.git</string>
 		<key>51B2BAA11FE869E9C821193615ED68A6391FC4AE</key>
-		<string>https://github.com/ssneller/IOS-training-apps.git</string>
-		<key>65D86B54-8CA7-40B3-81A7-A7905582159B</key>
 		<string>https://github.com/ssneller/IOS-training-apps.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Simple Form App.xcodeproj</string>
+	<string>Heidi BLah/Heidi BLah.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>0AB604AF40AB467E4583B7BC64306EE3ADE3D32E</key>
-		<string>../..</string>
 		<key>51B2BAA11FE869E9C821193615ED68A6391FC4AE</key>
 		<string>../../..</string>
-		<key>65D86B54-8CA7-40B3-81A7-A7905582159B</key>
-		<string>../../../IOS-training-apps</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/ssneller/Simple-Form-App.git</string>
+	<string>https://github.com/ssneller/IOS-training-apps.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>0AB604AF40AB467E4583B7BC64306EE3ADE3D32E</string>
+	<string>51B2BAA11FE869E9C821193615ED68A6391FC4AE</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -42,23 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>51B2BAA11FE869E9C821193615ED68A6391FC4AE</string>
 			<key>IDESourceControlWCCName</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>65D86B54-8CA7-40B3-81A7-A7905582159B</string>
-			<key>IDESourceControlWCCName</key>
 			<string>IOS-training-apps</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>0AB604AF40AB467E4583B7BC64306EE3ADE3D32E</string>
-			<key>IDESourceControlWCCName</key>
-			<string>Simple%20Form%20App</string>
 		</dict>
 	</array>
 </dict>

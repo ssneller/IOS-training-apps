@@ -10,24 +10,40 @@
 	<string>Mayorships</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>34898E6BADF31E464D2728047FB1CD51A6D9666E</key>
+		<string>https://github.com/ssneller/Mayorships.git</string>
 		<key>41E6DDA9-AA32-4B65-A296-EAD7CF5B64DA</key>
+		<string>https://github.com/ssneller/IOS-training-apps.git</string>
+		<key>51B2BAA11FE869E9C821193615ED68A6391FC4AE</key>
 		<string>https://github.com/ssneller/IOS-training-apps.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Mayorships/Mayorships/Mayorships.xcodeproj/project.xcworkspace</string>
+	<string>Mayorships/Mayorships.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>34898E6BADF31E464D2728047FB1CD51A6D9666E</key>
+		<string>../../..</string>
 		<key>41E6DDA9-AA32-4B65-A296-EAD7CF5B64DA</key>
+		<string>../../../../IOS-training-apps</string>
+		<key>51B2BAA11FE869E9C821193615ED68A6391FC4AE</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/ssneller/IOS-training-apps.git</string>
+	<string>https://github.com/ssneller/Mayorships.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>41E6DDA9-AA32-4B65-A296-EAD7CF5B64DA</string>
+	<string>34898E6BADF31E464D2728047FB1CD51A6D9666E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>51B2BAA11FE869E9C821193615ED68A6391FC4AE</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
@@ -35,6 +51,14 @@
 			<string>41E6DDA9-AA32-4B65-A296-EAD7CF5B64DA</string>
 			<key>IDESourceControlWCCName</key>
 			<string>IOS-training-apps</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>34898E6BADF31E464D2728047FB1CD51A6D9666E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Mayorships</string>
 		</dict>
 	</array>
 </dict>
