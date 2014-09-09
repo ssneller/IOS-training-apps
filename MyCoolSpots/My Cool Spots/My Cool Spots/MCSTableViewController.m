@@ -73,7 +73,7 @@
 {
 
     // Return the number of rows in the section.
-    return 0;
+    return 0;//self.venues.count;
 }
 
 

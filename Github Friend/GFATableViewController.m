@@ -175,15 +175,10 @@
 {
     
     GFATableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" ];
-    
     // Configure the cell...
     if (cell == nil){
-        
         cell = [[GFATableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-        
     }
-    
-    
     cell.friendInfo = gitHubFriends[indexPath.row];
     
     return cell;

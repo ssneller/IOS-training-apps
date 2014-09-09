@@ -10,24 +10,40 @@
 	<string>ListApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>51B2BAA11FE869E9C821193615ED68A6391FC4AE</key>
+		<string>https://github.com/ssneller/IOS-training-apps.git</string>
 		<key>90D4C6AF-CA6A-45F3-860B-B32A23DE28FF</key>
 		<string>https://github.com/ssneller/IOS-training-apps.git</string>
+		<key>D5BB65E6BBC4A823B8DE8B873482B9125C317E77</key>
+		<string>https://github.com/ssneller/ListApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ListApp/ListApp.xcodeproj/project.xcworkspace</string>
+	<string>ListApp.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>90D4C6AF-CA6A-45F3-860B-B32A23DE28FF</key>
+		<key>51B2BAA11FE869E9C821193615ED68A6391FC4AE</key>
 		<string>../../..</string>
+		<key>90D4C6AF-CA6A-45F3-860B-B32A23DE28FF</key>
+		<string>../../../IOS-training-apps</string>
+		<key>D5BB65E6BBC4A823B8DE8B873482B9125C317E77</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/ssneller/IOS-training-apps.git</string>
+	<string>https://github.com/ssneller/ListApp.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>90D4C6AF-CA6A-45F3-860B-B32A23DE28FF</string>
+	<string>D5BB65E6BBC4A823B8DE8B873482B9125C317E77</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>51B2BAA11FE869E9C821193615ED68A6391FC4AE</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
@@ -35,6 +51,14 @@
 			<string>90D4C6AF-CA6A-45F3-860B-B32A23DE28FF</string>
 			<key>IDESourceControlWCCName</key>
 			<string>IOS-training-apps</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D5BB65E6BBC4A823B8DE8B873482B9125C317E77</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ListApp</string>
 		</dict>
 	</array>
 </dict>
